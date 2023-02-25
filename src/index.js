@@ -16,17 +16,19 @@ const cs = {
 
 if (ct < 12) {
   content = "Good Morning";
-  ct.color = "red";
+  cs.color = "red";
 } else if (ct < 18 && ct > 12) {
   content = "Good Afternoon";
-  ct.color = "green";
+  cs.color = "green";
 } else {
   content = "Good Evening";
-  ct.color = "blue";
+  cs.color = "blue";
 }
 
 ReactDOM.render(
-  <h1 className="heading">{content}</h1>,
+  <h1 className="heading" style={cs}>
+    {content}
+  </h1>,
   document.getElementById("root")
 );
 //Apply the "heading" style in the styles.css
