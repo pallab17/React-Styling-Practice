@@ -10,8 +10,8 @@ const ct = date.getHours();
 
 let content;
 
-const cs ={
-   color : ""
+const cs = {
+  color: ""
 };
 
 if (ct < 12) {
@@ -22,12 +22,13 @@ if (ct < 12) {
   ct.color = "green";
 } else {
   content = "Good Evening";
+  ct.color = "blue";
 }
 
 ReactDOM.render(
-<h1 className="heading">{content}</h1>
-  ,
-   document.getElementById("root"));
+  <h1 className="heading">{content}</h1>,
+  document.getElementById("root")
+);
 //Apply the "heading" style in the styles.css
 //Dynamically change the color of the h1 using inline css styles.
 //Morning = red, Afternoon = green, Night = blue.
