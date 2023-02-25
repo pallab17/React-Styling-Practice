@@ -16,6 +16,7 @@ const cs ={
 
 if (ct < 12) {
   content = "Good Morning";
+  ct.color = "red";
 } else if (ct < 18 && ct > 12) {
   content = "Good Evening";
 } else {
