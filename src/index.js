@@ -10,6 +10,10 @@ const ct = date.getHours();
 
 let content;
 
+const cs ={
+   color : ""
+};
+
 if (ct < 12) {
   content = "Good Morning";
 } else if (ct < 18 && ct > 12) {
