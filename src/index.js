@@ -18,9 +18,10 @@ if (ct < 12) {
   content = "Good Morning";
   ct.color = "red";
 } else if (ct < 18 && ct > 12) {
-  content = "Good Evening";
+  content = "Good Afternoon";
+  ct.color = "green";
 } else {
-  content = "Good Night";
+  content = "Good Evening";
 }
 
 ReactDOM.render(
