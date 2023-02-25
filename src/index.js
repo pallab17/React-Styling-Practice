@@ -18,7 +18,10 @@ if (ct < 12) {
   content = "Good Night";
 }
 
-ReactDOM.render(<h1>{content}</h1>, document.getElementById("root"));
+ReactDOM.render(
+<h1 className="heading">{content}</h1>
+  ,
+   document.getElementById("root"));
 //Apply the "heading" style in the styles.css
 //Dynamically change the color of the h1 using inline css styles.
 //Morning = red, Afternoon = green, Night = blue.
